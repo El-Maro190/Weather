@@ -21,7 +21,7 @@ const getWeather = async (city = "Cairo") => {
   if (city.length < 3) return;
   try {
     let data = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=e93b37c502d447818da150838241412&q=${city}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=e93b37c502d447818da150838241412&q=${city}&days=3`
     );
     data = await data.json();
     weatherData = data;
